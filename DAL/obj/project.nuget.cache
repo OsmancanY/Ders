@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "78YqYdXKUcWeOBdQjYk1g2pIJwoOV9MH5PV7O601PCfKMxrQomsCRLEWKfZMCHF5GngJC/Kj4DrPy/Mn0zoB4A==",
+  "dgSpecHash": "ZsWDZS1all1fen3HV13j1qw11AGb1E0bc10OvFM4s49TVgiUECTPPN1Ly6FBBxZsM6cVNGEewF0WlZumuXcJ2w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\osica\\Source\\Repos\\HelloWindowsBILSube11\\OkulAppSube1BIL\\DAL\\DAL.csproj",
+  "projectFilePath": "C:\\Users\\osica\\Source\\Repos\\Ders\\DAL\\DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\osica\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

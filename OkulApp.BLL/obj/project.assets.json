@@ -4037,11 +4037,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\osica\\Source\\Repos\\HelloWindowsBILSube11\\OkulAppSube1BIL\\OkulApp.BLL\\OkulApp.BLL.csproj",
+      "projectUniqueName": "C:\\Users\\osica\\Source\\Repos\\Ders\\OkulApp.BLL\\OkulApp.BLL.csproj",
       "projectName": "OkulApp.BLL",
-      "projectPath": "C:\\Users\\osica\\Source\\Repos\\HelloWindowsBILSube11\\OkulAppSube1BIL\\OkulApp.BLL\\OkulApp.BLL.csproj",
+      "projectPath": "C:\\Users\\osica\\Source\\Repos\\Ders\\OkulApp.BLL\\OkulApp.BLL.csproj",
       "packagesPath": "C:\\Users\\osica\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\osica\\Source\\Repos\\HelloWindowsBILSube11\\OkulAppSube1BIL\\OkulApp.BLL\\obj\\",
+      "outputPath": "C:\\Users\\osica\\Source\\Repos\\Ders\\OkulApp.BLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\osica\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4058,11 +4058,11 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "C:\\Users\\osica\\Source\\Repos\\HelloWindowsBILSube11\\OkulAppSube1BIL\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\osica\\Source\\Repos\\HelloWindowsBILSube11\\OkulAppSube1BIL\\DAL\\DAL.csproj"
+            "C:\\Users\\osica\\Source\\Repos\\Ders\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\osica\\Source\\Repos\\Ders\\DAL\\DAL.csproj"
             },
-            "C:\\Users\\osica\\Source\\Repos\\HelloWindowsBILSube11\\OkulAppSube1BIL\\OkulApp.MODEL\\OkulApp.MODEL.csproj": {
-              "projectPath": "C:\\Users\\osica\\Source\\Repos\\HelloWindowsBILSube11\\OkulAppSube1BIL\\OkulApp.MODEL\\OkulApp.MODEL.csproj"
+            "C:\\Users\\osica\\Source\\Repos\\Ders\\OkulApp.MODEL\\OkulApp.MODEL.csproj": {
+              "projectPath": "C:\\Users\\osica\\Source\\Repos\\Ders\\OkulApp.MODEL\\OkulApp.MODEL.csproj"
             }
           }
         }

@@ -2744,11 +2744,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\osica\\Source\\Repos\\HelloWindowsBILSube11\\OkulAppSube1BIL\\OkulApp.MODEL\\OkulApp.MODEL.csproj",
+      "projectUniqueName": "C:\\Users\\osica\\Source\\Repos\\Ders\\OkulApp.MODEL\\OkulApp.MODEL.csproj",
       "projectName": "OkulApp.MODEL",
-      "projectPath": "C:\\Users\\osica\\Source\\Repos\\HelloWindowsBILSube11\\OkulAppSube1BIL\\OkulApp.MODEL\\OkulApp.MODEL.csproj",
+      "projectPath": "C:\\Users\\osica\\Source\\Repos\\Ders\\OkulApp.MODEL\\OkulApp.MODEL.csproj",
       "packagesPath": "C:\\Users\\osica\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\osica\\Source\\Repos\\HelloWindowsBILSube11\\OkulAppSube1BIL\\OkulApp.MODEL\\obj\\",
+      "outputPath": "C:\\Users\\osica\\Source\\Repos\\Ders\\OkulApp.MODEL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\osica\\AppData\\Roaming\\NuGet\\NuGet.Config",
