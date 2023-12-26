@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OkulApp.BLL.Repositories.OgretmenRepositories;
+using System;
 using System.Windows.Forms;
 
 namespace OkulAppSube1BIL
@@ -11,6 +12,7 @@ namespace OkulAppSube1BIL
         [STAThread]
         static void Main()
         {
+            OgretmenWriteRepository ogretmenWriteRepository;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmOgretmenKayit());

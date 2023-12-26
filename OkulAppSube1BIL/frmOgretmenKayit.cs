@@ -6,7 +6,7 @@ namespace OkulAppSube1BIL
 {
     public partial class frmOgretmenKayit : Form
     {
-        readonly private OgretmenWriteRepository _ogretmenwriterepository;
+        public OgretmenWriteRepository _ogretmenwriterepository;
         public frmOgretmenKayit(OgretmenWriteRepository ogretmenWriteRepository)
         {
             _ogretmenwriterepository = ogretmenWriteRepository;
