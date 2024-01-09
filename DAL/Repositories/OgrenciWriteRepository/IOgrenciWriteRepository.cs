@@ -1,4 +1,5 @@
-﻿using OkulApp.MODEL;
+﻿using DAL.Entities;
+
 
 namespace DAL.Repositories.OgrenciWriteRepository
 {

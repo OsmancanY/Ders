@@ -1,6 +1,6 @@
 ﻿namespace DAL.Entities
 {
-    public class Ogrenci
+    public class Ogrenci : BaseEntity
     {
         public string Ad { get; set; }
         public string Soyad { get; set; }

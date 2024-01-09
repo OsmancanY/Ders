@@ -1,15 +1,15 @@
-﻿using DAL.Repositories;
+﻿using DAL.Entities;
+using DAL.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using OkulApp.BLL.Contexts;
-using OkulApp.MODEL;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace OkulApp.BLL.Repositories
 {
-    public class WriteRepository<T> : IWriteRepository<T> where T : BaseModel
+    public class WriteRepository<T> : IWriteRepository<T> where T : BaseEntity
     {
         private readonly AppDBContext _context;
         public WriteRepository(AppDBContext context)
