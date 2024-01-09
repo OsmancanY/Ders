@@ -1,6 +1,7 @@
-﻿using DAL.Repositories.OgretmenRepository;
+﻿using DAL.Entities;
+using DAL.Repositories.OgretmenRepository;
 using OkulApp.BLL.Contexts;
-using OkulApp.MODEL;
+
 
 namespace OkulApp.BLL.Repositories.OgretmenRepositories
 {

@@ -1,4 +1,5 @@
-﻿using OkulApp.BLL.Repositories.OgretmenRepositories;
+﻿using DAL.Entities;
+using OkulApp.BLL.Repositories.OgretmenRepositories;
 using System;
 using System.Windows.Forms;
 
@@ -23,7 +24,7 @@ namespace OkulAppSube1BIL
         {
             try
             {
-                await _ogretmenwriterepository.AddAsync(new OkulApp.MODEL.Ogretmen()
+                await _ogretmenwriterepository.AddAsync(new Ogretmen()
                 {
                     TcNo = int.Parse(textBoxtcno.Text),
                     Ad = textBoxad.Text,

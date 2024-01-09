@@ -33,8 +33,8 @@ namespace OkulAppSube1BIL
                 .ConfigureServices((context, services) =>
                 {
                     services.AddDbContext<AppDBContext>(options => options.UseNpgsql("User ID=postgres;Password=postgres;Host=localhost;Port=5432;Database=okul;Pooling=true;Min Pool Size=0;Max Pool Size=100;Connection Lifetime=0;"));
-                    services.AddTransient<OgretmenWriteRepository>();
-                    services.AddTransient<MainForm>();
+                    services.AddSingleton<OgretmenWriteRepository>();
+                    services.AddSingleton<MainForm>();
                 });
         }
     }
