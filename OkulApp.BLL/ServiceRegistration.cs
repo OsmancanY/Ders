@@ -13,8 +13,8 @@ namespace OkulApp.BLL
         public static void AddServiceRegistration(this IServiceCollection services)
         {
             services.AddDbContext<AppDBContext>(options => options.UseNpgsql("User ID=postgres;Password=postgres;Host=localhost;Port=5432;Database=okul;Pooling=true;Min Pool Size=0;Max Pool Size=100;Connection Lifetime=0;"));
-            services.AddScoped<IOgretmenWriteRepository, OgretmenWriteRepository>();
-            services.AddScoped<IOgrenciWriteRepository, OgrenciWriteRepository>();
+            services.AddTransient<IOgretmenWriteRepository, OgretmenWriteRepository>();
+            services.AddTransient<IOgrenciWriteRepository, OgrenciWriteRepository>();
         }
     }
 }
