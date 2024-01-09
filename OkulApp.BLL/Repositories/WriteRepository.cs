@@ -54,5 +54,10 @@ namespace OkulApp.BLL.Repositories
             return entityEntry.State == EntityState.Modified;
         }
         public async Task<int> SaveAsync() => await _context.SaveChangesAsync();
+
+        public void Dispose()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -1195,6 +1195,7 @@
           "Microsoft.EntityFrameworkCore": "2.1.0",
           "MongoDB.Bson": "2.23.1",
           "MongoDB.Driver": "2.23.1",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "2.0.0",
           "OkulApp.MODEL": "1.0.0",
           "System.Configuration.ConfigurationManager": "8.0.0",
           "System.Data.SqlClient": "4.8.5"
@@ -1210,7 +1211,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "2.1.0"
+          "Microsoft.EntityFrameworkCore": "2.1.0",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "2.0.0"
         },
         "compile": {
           "bin/placeholder/OkulApp.MODEL.dll": {}

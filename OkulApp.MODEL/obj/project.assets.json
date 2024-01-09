@@ -2,6 +2,17 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "Microsoft.CSharp/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/Microsoft.CSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.CSharp.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -42,6 +53,24 @@
       },
       "Microsoft.EntityFrameworkCore.Analyzers/2.1.0": {
         "type": "package"
+      },
+      "Microsoft.EntityFrameworkCore.Relational/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.4.0",
+          "Microsoft.EntityFrameworkCore": "2.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Relational.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Relational.dll": {
+            "related": ".xml"
+          }
+        }
       },
       "Microsoft.Extensions.Caching.Abstractions/2.1.0": {
         "type": "package",
@@ -229,7 +258,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.Targets/1.0.1": {
+      "Microsoft.NETCore.Targets/1.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -251,6 +280,38 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Npgsql/3.2.5": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Npgsql.EntityFrameworkCore.PostgreSQL/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "2.0.0",
+          "Microsoft.Extensions.DependencyInjection": "2.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
+          "Npgsql": "3.2.5"
+        },
+        "compile": {
+          "lib/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
         }
       },
       "Remotion.Linq/2.2.0": {
@@ -292,12 +353,12 @@
           }
         }
       },
-      "System.Collections/4.0.11": {
+      "System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
-          "Microsoft.NETCore.Targets": "1.0.1",
-          "System.Runtime": "4.1.0"
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "System.Runtime": "4.3.0"
         },
         "compile": {
           "ref/netstandard1.3/System.Collections.dll": {
@@ -640,11 +701,11 @@
           }
         }
       },
-      "System.Runtime/4.1.0": {
+      "System.Runtime/4.3.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
-          "Microsoft.NETCore.Targets": "1.0.1"
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0"
         },
         "compile": {
           "ref/netstandard1.5/System.Runtime.dll": {
@@ -706,15 +767,33 @@
           "lib/netstandard1.3/System.Threading.dll": {}
         }
       },
-      "System.Threading.Tasks/4.0.11": {
+      "System.Threading.Tasks/4.3.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
-          "Microsoft.NETCore.Targets": "1.0.1",
-          "System.Runtime": "4.1.0"
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "System.Runtime": "4.3.0"
         },
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Threading.Tasks": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll": {
             "related": ".xml"
           }
         }
@@ -722,6 +801,72 @@
     }
   },
   "libraries": {
+    "Microsoft.CSharp/4.4.0": {
+      "sha512": "vvVR/B08YVghQ4jHEloxqw2ZWzEGE1AOA5E0DioUM3ujbXz6FD3AfB/0Jl2ohJPd0nXYGwmPe1En6HTsSriq1A==",
+      "type": "package",
+      "path": "microsoft.csharp/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "microsoft.csharp.4.4.0.nupkg.sha512",
+        "microsoft.csharp.nuspec",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/netcore50/de/Microsoft.CSharp.xml",
+        "ref/netcore50/es/Microsoft.CSharp.xml",
+        "ref/netcore50/fr/Microsoft.CSharp.xml",
+        "ref/netcore50/it/Microsoft.CSharp.xml",
+        "ref/netcore50/ja/Microsoft.CSharp.xml",
+        "ref/netcore50/ko/Microsoft.CSharp.xml",
+        "ref/netcore50/ru/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/Microsoft.CSharp.dll",
+        "ref/netstandard1.0/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
+        "ref/netstandard2.0/Microsoft.CSharp.dll",
+        "ref/netstandard2.0/Microsoft.CSharp.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "Microsoft.EntityFrameworkCore/2.1.0": {
       "sha512": "ryuuih0u0b8/6PTXrjJE/fdYzNojl6rICyApc7dueNnbAhzTG9rWreDbnPrpG27ueiYd6vyUvREGgjhoUg62Ow==",
       "type": "package",
@@ -758,6 +903,19 @@
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "microsoft.entityframeworkcore.analyzers.2.1.0.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Relational/2.0.0": {
+      "sha512": "/Ay6EZXUZuPLCKdbLW59AuwCm+hqDgIxBzDTHIx6uEIvDFfC0Bs99CRL8Lgi1NgU9NOhFDmeRgE1goViru+Zgg==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.relational/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Relational.dll",
+        "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Relational.xml",
+        "microsoft.entityframeworkcore.relational.2.0.0.nupkg.sha512",
+        "microsoft.entityframeworkcore.relational.nuspec"
       ]
     },
     "Microsoft.Extensions.Caching.Abstractions/2.1.0": {
@@ -922,17 +1080,17 @@
         "runtime.json"
       ]
     },
-    "Microsoft.NETCore.Targets/1.0.1": {
-      "sha512": "rkn+fKobF/cbWfnnfBOQHKVKIOpxMZBvlSHkqDWgBpwGDcLRduvs3D9OLGeV6GWGvVwNlVi2CBbTjuPmtHvyNw==",
+    "Microsoft.NETCore.Targets/1.1.0": {
+      "sha512": "aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
       "type": "package",
-      "path": "microsoft.netcore.targets/1.0.1",
+      "path": "microsoft.netcore.targets/1.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
-        "microsoft.netcore.targets.1.0.1.nupkg.sha512",
+        "microsoft.netcore.targets.1.1.0.nupkg.sha512",
         "microsoft.netcore.targets.nuspec",
         "runtime.json"
       ]
@@ -1066,6 +1224,37 @@
         "netstandard.library.nuspec"
       ]
     },
+    "Npgsql/3.2.5": {
+      "sha512": "89z5pHuLuwjkHz/cQLuM/YxlepR/0NKJP+Cvu8z1cAMv7AdKZnN5leQqV6HxIQDR245Xal1w5OH7kDb9hDRupg==",
+      "type": "package",
+      "path": "npgsql/3.2.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Npgsql.dll",
+        "lib/net45/Npgsql.xml",
+        "lib/net451/Npgsql.dll",
+        "lib/net451/Npgsql.xml",
+        "lib/netstandard1.3/Npgsql.dll",
+        "lib/netstandard1.3/Npgsql.xml",
+        "lib/netstandard2.0/Npgsql.dll",
+        "lib/netstandard2.0/Npgsql.xml",
+        "npgsql.3.2.5.nupkg.sha512",
+        "npgsql.nuspec"
+      ]
+    },
+    "Npgsql.EntityFrameworkCore.PostgreSQL/2.0.0": {
+      "sha512": "saKCNK8A5OW3sUhL/tvYqNyKUK7AbIQlZUVmjn4Fw9wstyopECeF/9Er1fexRLpWev0/H9fUzFclTrXm+omsag==",
+      "type": "package",
+      "path": "npgsql.entityframeworkcore.postgresql/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll",
+        "npgsql.entityframeworkcore.postgresql.2.0.0.nupkg.sha512",
+        "npgsql.entityframeworkcore.postgresql.nuspec"
+      ]
+    },
     "Remotion.Linq/2.2.0": {
       "sha512": "fK/76UmpC0FXBlGDFVPLJHQlDLYnGC+XY3eoDgCgbtrhi0vzbXDQ3n/IYHhqSKqXQfGw/u04A1drWs7rFVkRjw==",
       "type": "package",
@@ -1112,10 +1301,10 @@
         "version.txt"
       ]
     },
-    "System.Collections/4.0.11": {
-      "sha512": "YUJGz6eFKqS0V//mLt25vFGrrCvOnsXjlvFQs+KimpwNxug9x0Pzy4PlFMU3Q2IzqAa9G2L4LsK3+9vCBK7oTg==",
+    "System.Collections/4.3.0": {
+      "sha512": "3Dcj85/TBdVpL5Zr+gEEBUuFe2icOnLalmEh9hfck1PTYbbyWuZgh4fmm2ysCLTrqLQw6t3TgTyJ+VLp+Qb+Lw==",
       "type": "package",
-      "path": "system.collections/4.0.11",
+      "path": "system.collections/4.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1176,7 +1365,7 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.collections.4.0.11.nupkg.sha512",
+        "system.collections.4.3.0.nupkg.sha512",
         "system.collections.nuspec"
       ]
     },
@@ -2324,10 +2513,10 @@
         "system.resources.resourcemanager.nuspec"
       ]
     },
-    "System.Runtime/4.1.0": {
-      "sha512": "v6c/4Yaa9uWsq+JMhnOFewrYkgdNHNG2eMKuNqRn8P733rNXeRCGvV5FkkjBXn2dbVkPXOsO0xjsEeM1q2zC0g==",
+    "System.Runtime/4.3.0": {
+      "sha512": "JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
       "type": "package",
-      "path": "system.runtime/4.1.0",
+      "path": "system.runtime/4.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2412,7 +2601,7 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.runtime.4.1.0.nupkg.sha512",
+        "system.runtime.4.3.0.nupkg.sha512",
         "system.runtime.nuspec"
       ]
     },
@@ -2663,10 +2852,10 @@
         "system.threading.nuspec"
       ]
     },
-    "System.Threading.Tasks/4.0.11": {
-      "sha512": "k1S4Gc6IGwtHGT8188RSeGaX86Qw/wnrgNLshJvsdNUOPP9etMmo8S07c+UlOAx4K/xLuN9ivA1bD0LVurtIxQ==",
+    "System.Threading.Tasks/4.3.0": {
+      "sha512": "LbSxKEdOUhVe8BezB/9uOGGppt+nZf6e1VFyw6v3DN6lqitm0OSn2uXMOdtP0M3W4iMcqcivm2J6UgqiwwnXiA==",
       "type": "package",
-      "path": "system.threading.tasks/4.0.11",
+      "path": "system.threading.tasks/4.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2727,15 +2916,33 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.threading.tasks.4.0.11.nupkg.sha512",
+        "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
+      ]
+    },
+    "System.Threading.Tasks.Extensions/4.3.0": {
+      "sha512": "npvJkVKl5rKXrtl1Kkm6OhOUaYGEiF9wFbppFRWSMoApKzt2PiPHT2Bb8a5sAWxprvdOAtvaARS9QYMznEUtug==",
+      "type": "package",
+      "path": "system.threading.tasks.extensions/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml",
+        "system.threading.tasks.extensions.4.3.0.nupkg.sha512",
+        "system.threading.tasks.extensions.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "Microsoft.EntityFrameworkCore >= 2.1.0",
-      "NETStandard.Library >= 2.0.3"
+      "NETStandard.Library >= 2.0.3",
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 2.0.0"
     ]
   },
   "packageFolders": {
@@ -2786,6 +2993,10 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "Npgsql.EntityFrameworkCore.PostgreSQL": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           }
         },
         "imports": [

@@ -67,6 +67,17 @@
           }
         }
       },
+      "Microsoft.CSharp/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/Microsoft.CSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.CSharp.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -107,6 +118,24 @@
       },
       "Microsoft.EntityFrameworkCore.Analyzers/2.1.0": {
         "type": "package"
+      },
+      "Microsoft.EntityFrameworkCore.Relational/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.4.0",
+          "Microsoft.EntityFrameworkCore": "2.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Relational.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Relational.dll": {
+            "related": ".xml"
+          }
+        }
       },
       "Microsoft.Extensions.Caching.Abstractions/2.1.0": {
         "type": "package",
@@ -434,6 +463,38 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Npgsql/3.2.5": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Npgsql.EntityFrameworkCore.PostgreSQL/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "2.0.0",
+          "Microsoft.Extensions.DependencyInjection": "2.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
+          "Npgsql": "3.2.5"
+        },
+        "compile": {
+          "lib/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
         }
       },
       "Remotion.Linq/2.2.0": {
@@ -1131,7 +1192,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "2.1.0"
+          "Microsoft.EntityFrameworkCore": "2.1.0",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "2.0.0"
         },
         "compile": {
           "bin/placeholder/OkulApp.MODEL.dll": {}
@@ -1241,6 +1303,72 @@
         "version.txt"
       ]
     },
+    "Microsoft.CSharp/4.4.0": {
+      "sha512": "vvVR/B08YVghQ4jHEloxqw2ZWzEGE1AOA5E0DioUM3ujbXz6FD3AfB/0Jl2ohJPd0nXYGwmPe1En6HTsSriq1A==",
+      "type": "package",
+      "path": "microsoft.csharp/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "microsoft.csharp.4.4.0.nupkg.sha512",
+        "microsoft.csharp.nuspec",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/netcore50/de/Microsoft.CSharp.xml",
+        "ref/netcore50/es/Microsoft.CSharp.xml",
+        "ref/netcore50/fr/Microsoft.CSharp.xml",
+        "ref/netcore50/it/Microsoft.CSharp.xml",
+        "ref/netcore50/ja/Microsoft.CSharp.xml",
+        "ref/netcore50/ko/Microsoft.CSharp.xml",
+        "ref/netcore50/ru/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/Microsoft.CSharp.dll",
+        "ref/netstandard1.0/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
+        "ref/netstandard2.0/Microsoft.CSharp.dll",
+        "ref/netstandard2.0/Microsoft.CSharp.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "Microsoft.EntityFrameworkCore/2.1.0": {
       "sha512": "ryuuih0u0b8/6PTXrjJE/fdYzNojl6rICyApc7dueNnbAhzTG9rWreDbnPrpG27ueiYd6vyUvREGgjhoUg62Ow==",
       "type": "package",
@@ -1277,6 +1405,19 @@
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "microsoft.entityframeworkcore.analyzers.2.1.0.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Relational/2.0.0": {
+      "sha512": "/Ay6EZXUZuPLCKdbLW59AuwCm+hqDgIxBzDTHIx6uEIvDFfC0Bs99CRL8Lgi1NgU9NOhFDmeRgE1goViru+Zgg==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.relational/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Relational.dll",
+        "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Relational.xml",
+        "microsoft.entityframeworkcore.relational.2.0.0.nupkg.sha512",
+        "microsoft.entityframeworkcore.relational.nuspec"
       ]
     },
     "Microsoft.Extensions.Caching.Abstractions/2.1.0": {
@@ -1710,6 +1851,37 @@
         "lib/netstandard1.0/_._",
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
+      ]
+    },
+    "Npgsql/3.2.5": {
+      "sha512": "89z5pHuLuwjkHz/cQLuM/YxlepR/0NKJP+Cvu8z1cAMv7AdKZnN5leQqV6HxIQDR245Xal1w5OH7kDb9hDRupg==",
+      "type": "package",
+      "path": "npgsql/3.2.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Npgsql.dll",
+        "lib/net45/Npgsql.xml",
+        "lib/net451/Npgsql.dll",
+        "lib/net451/Npgsql.xml",
+        "lib/netstandard1.3/Npgsql.dll",
+        "lib/netstandard1.3/Npgsql.xml",
+        "lib/netstandard2.0/Npgsql.dll",
+        "lib/netstandard2.0/Npgsql.xml",
+        "npgsql.3.2.5.nupkg.sha512",
+        "npgsql.nuspec"
+      ]
+    },
+    "Npgsql.EntityFrameworkCore.PostgreSQL/2.0.0": {
+      "sha512": "saKCNK8A5OW3sUhL/tvYqNyKUK7AbIQlZUVmjn4Fw9wstyopECeF/9Er1fexRLpWev0/H9fUzFclTrXm+omsag==",
+      "type": "package",
+      "path": "npgsql.entityframeworkcore.postgresql/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll",
+        "npgsql.entityframeworkcore.postgresql.2.0.0.nupkg.sha512",
+        "npgsql.entityframeworkcore.postgresql.nuspec"
       ]
     },
     "Remotion.Linq/2.2.0": {
@@ -3833,6 +4005,7 @@
       "MongoDB.Bson >= 2.23.1",
       "MongoDB.Driver >= 2.23.1",
       "NETStandard.Library >= 2.0.3",
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 2.0.0",
       "OkulApp.MODEL >= 1.0.0",
       "System.Configuration.ConfigurationManager >= 8.0.0",
       "System.Data.SqlClient >= 4.8.5"
@@ -3898,6 +4071,10 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "Npgsql.EntityFrameworkCore.PostgreSQL": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           },
           "System.Configuration.ConfigurationManager": {
             "target": "Package",

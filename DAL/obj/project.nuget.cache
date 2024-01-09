@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZsWDZS1all1fen3HV13j1qw11AGb1E0bc10OvFM4s49TVgiUECTPPN1Ly6FBBxZsM6cVNGEewF0WlZumuXcJ2w==",
+  "dgSpecHash": "x/3LZZBLQGgZCA9K02/TPTR0zifxdAlRMTOrI2TzYhDh60aINDL97EZEiqTQnDGNYpyA1SA2owzz5Hw8DLJYdg==",
   "success": true,
   "projectFilePath": "C:\\Users\\osica\\Source\\Repos\\Ders\\DAL\\DAL.csproj",
   "expectedPackageFiles": [
@@ -8,9 +8,11 @@
     "C:\\Users\\osica\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
+    "C:\\Users\\osica\\.nuget\\packages\\microsoft.csharp\\4.4.0\\microsoft.csharp.4.4.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\microsoft.entityframeworkcore\\2.1.0\\microsoft.entityframeworkcore.2.1.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\2.1.0\\microsoft.entityframeworkcore.abstractions.2.1.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\2.1.0\\microsoft.entityframeworkcore.analyzers.2.1.0.nupkg.sha512",
+    "C:\\Users\\osica\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\2.0.0\\microsoft.entityframeworkcore.relational.2.0.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\2.1.0\\microsoft.extensions.caching.abstractions.2.1.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\microsoft.extensions.caching.memory\\2.1.0\\microsoft.extensions.caching.memory.2.1.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\microsoft.extensions.configuration\\2.1.0\\microsoft.extensions.configuration.2.1.0.nupkg.sha512",
@@ -30,6 +32,8 @@
     "C:\\Users\\osica\\.nuget\\packages\\mongodb.driver.core\\2.23.1\\mongodb.driver.core.2.23.1.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\mongodb.libmongocrypt\\1.8.0\\mongodb.libmongocrypt.1.8.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\osica\\.nuget\\packages\\npgsql\\3.2.5\\npgsql.3.2.5.nupkg.sha512",
+    "C:\\Users\\osica\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\2.0.0\\npgsql.entityframeworkcore.postgresql.2.0.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\remotion.linq\\2.2.0\\remotion.linq.2.2.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

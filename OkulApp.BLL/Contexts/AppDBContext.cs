@@ -1,6 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using DAL.Entities;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
-using OkulApp.MODEL;
+
 using System;
 using System.Threading;
 using System.Threading.Tasks;
@@ -9,7 +10,7 @@ namespace OkulApp.BLL.Contexts
 {
     public class AppDBContext : DbContext
     {
-        public AppDBContext(DbContextOptions options) : base(options)
+        public AppDBContext(DbContextOptions<AppDBContext> options) : base(options)
         {
 
         }
@@ -19,7 +20,7 @@ namespace OkulApp.BLL.Contexts
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
 
-            var datas = ChangeTracker.Entries<BaseModel>();
+            var datas = ChangeTracker.Entries<BaseEntity>();
             foreach (var data in datas)
             {
                 switch (data.State)

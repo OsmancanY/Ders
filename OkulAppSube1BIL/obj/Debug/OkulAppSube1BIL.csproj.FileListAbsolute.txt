@@ -176,3 +176,8 @@ C:\Users\osica\Source\Repos\Ders\OkulAppSube1BIL\bin\Debug\System.Text.Encodings
 C:\Users\osica\Source\Repos\Ders\OkulAppSube1BIL\bin\Debug\System.Text.Json.xml
 C:\Users\osica\Source\Repos\Ders\OkulAppSube1BIL\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\osica\Source\Repos\Ders\OkulAppSube1BIL\bin\Debug\System.ValueTuple.xml
+C:\Users\osica\Source\Repos\Ders\OkulAppSube1BIL\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\osica\Source\Repos\Ders\OkulAppSube1BIL\bin\Debug\Npgsql.dll
+C:\Users\osica\Source\Repos\Ders\OkulAppSube1BIL\bin\Debug\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\osica\Source\Repos\Ders\OkulAppSube1BIL\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+C:\Users\osica\Source\Repos\Ders\OkulAppSube1BIL\bin\Debug\Npgsql.xml

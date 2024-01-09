@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "GGFvyhspm4+3HZK9GkNpTQpFIHLipa4VAN83y+D1CXjZFKRgGZtn0oYQoqWmrk7L6cH6AEUfmpTXzuyTJCZnog==",
+  "dgSpecHash": "Iifcd/SnlD6/+Ax4Wyx6KH0SqbaDKz/BDxoJ72luVkhaANXj6du1WlGzNDQvxB27btLyjcwRgVNuDIsx0Hp8TQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\osica\\Source\\Repos\\Ders\\OkulApp.MODEL\\OkulApp.MODEL.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\osica\\.nuget\\packages\\microsoft.csharp\\4.4.0\\microsoft.csharp.4.4.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\microsoft.entityframeworkcore\\2.1.0\\microsoft.entityframeworkcore.2.1.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\2.1.0\\microsoft.entityframeworkcore.abstractions.2.1.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\2.1.0\\microsoft.entityframeworkcore.analyzers.2.1.0.nupkg.sha512",
+    "C:\\Users\\osica\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\2.0.0\\microsoft.entityframeworkcore.relational.2.0.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\2.1.0\\microsoft.extensions.caching.abstractions.2.1.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\microsoft.extensions.caching.memory\\2.1.0\\microsoft.extensions.caching.memory.2.1.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\microsoft.extensions.configuration\\2.1.0\\microsoft.extensions.configuration.2.1.0.nupkg.sha512",
@@ -19,11 +21,13 @@
     "C:\\Users\\osica\\.nuget\\packages\\microsoft.extensions.options\\2.1.0\\microsoft.extensions.options.2.1.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\microsoft.extensions.primitives\\2.1.0\\microsoft.extensions.primitives.2.1.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\osica\\.nuget\\packages\\microsoft.netcore.targets\\1.0.1\\microsoft.netcore.targets.1.0.1.nupkg.sha512",
+    "C:\\Users\\osica\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\osica\\.nuget\\packages\\npgsql\\3.2.5\\npgsql.3.2.5.nupkg.sha512",
+    "C:\\Users\\osica\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\2.0.0\\npgsql.entityframeworkcore.postgresql.2.0.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\remotion.linq\\2.2.0\\remotion.linq.2.2.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
-    "C:\\Users\\osica\\.nuget\\packages\\system.collections\\4.0.11\\system.collections.4.0.11.nupkg.sha512",
+    "C:\\Users\\osica\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\system.collections.immutable\\1.5.0\\system.collections.immutable.1.5.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\system.componentmodel.annotations\\4.5.0\\system.componentmodel.annotations.4.5.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\system.diagnostics.debug\\4.0.11\\system.diagnostics.debug.4.0.11.nupkg.sha512",
@@ -45,12 +49,13 @@
     "C:\\Users\\osica\\.nuget\\packages\\system.reflection.primitives\\4.0.1\\system.reflection.primitives.4.0.1.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\system.reflection.typeextensions\\4.1.0\\system.reflection.typeextensions.4.1.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\system.resources.resourcemanager\\4.0.1\\system.resources.resourcemanager.4.0.1.nupkg.sha512",
-    "C:\\Users\\osica\\.nuget\\packages\\system.runtime\\4.1.0\\system.runtime.4.1.0.nupkg.sha512",
+    "C:\\Users\\osica\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.0\\system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\system.runtime.extensions\\4.1.0\\system.runtime.extensions.4.1.0.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\system.text.encoding\\4.0.11\\system.text.encoding.4.0.11.nupkg.sha512",
     "C:\\Users\\osica\\.nuget\\packages\\system.threading\\4.0.11\\system.threading.4.0.11.nupkg.sha512",
-    "C:\\Users\\osica\\.nuget\\packages\\system.threading.tasks\\4.0.11\\system.threading.tasks.4.0.11.nupkg.sha512"
+    "C:\\Users\\osica\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
+    "C:\\Users\\osica\\.nuget\\packages\\system.threading.tasks.extensions\\4.3.0\\system.threading.tasks.extensions.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

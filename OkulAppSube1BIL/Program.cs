@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using OkulApp.BLL.Contexts;
 using OkulApp.BLL.Repositories.OgretmenRepositories;
@@ -31,7 +32,7 @@ namespace OkulAppSube1BIL
             return Host.CreateDefaultBuilder()
                 .ConfigureServices((context, services) =>
                 {
-                    services.AddDbContext<AppDBContext>();
+                    services.AddDbContext<AppDBContext>(options => options.UseNpgsql("User ID=postgres;Password=postgres;Host=localhost;Port=5432;Database=okul;Pooling=true;Min Pool Size=0;Max Pool Size=100;Connection Lifetime=0;"));
                     services.AddTransient<OgretmenWriteRepository>();
                     services.AddTransient<MainForm>();
                 });

@@ -32,6 +32,7 @@ namespace OkulAppSube1BIL
                 });
                 await _ogretmenwriterepository.SaveAsync();
                 MessageBox.Show("İşlem Başarılı");
+                _ogretmenwriterepository.Dispose();
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
 
